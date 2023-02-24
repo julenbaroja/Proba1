@@ -1,0 +1,18 @@
+program julen
+real :: j
+
+j = batuketa(2.0)
+
+print*, j
+
+contains
+
+function batuketa(x) result (em)
+real, intent(in) :: x
+real, intent(out) :: em
+
+em = 2 + x
+
+end function batuketa
+
+end program julen
